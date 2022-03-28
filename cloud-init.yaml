@@ -1,0 +1,6 @@
+#cloud-config
+bootcmd:
+  - cd /tmp
+  - wget https://ssautomationsa.blob.core.windows.net/apps/badWebServer
+  - chmod 700 /tmp/badWebServer
+  - screen -dmS webbo /tmp/badWebServer
