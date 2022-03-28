@@ -1,0 +1,11 @@
+[Unit]
+Description=Test Web Server
+#After=network.target
+
+[Service]
+Type=Simple
+ExecStart=/usr/local/bin/testwebserver
+StandardOutput=journal
+
+[Install]
+WantedBy=multi-user.target
