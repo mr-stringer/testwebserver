@@ -4,7 +4,7 @@ bootcmd:
   - wget https://github.com/mr-stringer/testwebserver/releases/download/v1.0.0/testwebserver
   - chown root:root /usr/local/bin/testwebserver
   - chmod 700 /usr/local/bin/testwebserver
-  - ch /etc/systemd/system
+  - cd /etc/systemd/system
   - wget https://github.com/mr-stringer/testwebserver/releases/download/v1.0.0/testwebserver.service
   - chown root:root /etc/systemd/system/testwebserver.service
   - chmod 544 /etc/systemd/system/testwebserver.service
